@@ -69,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen>
           DefaultGroupResponse? defaultGroupResponse = snapshot.data;
           if (defaultGroupResponse?.data?.defaultGroup == null) {
             Future.delayed(Duration.zero, () {
-              Navigator.pushReplacementNamed(context, routes.login);
+              Navigator.pushReplacementNamed(context, routes.dashboard);
             });
           } else {
             Future.delayed(Duration.zero, () {

@@ -19,7 +19,7 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   List<Meeting> meetingsList = [];
-  String groupName = StringConstant.textEmpty;
+  String groupName = StringConstant.textSpace;
 
   @override
   void initState() {

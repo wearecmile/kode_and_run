@@ -15,9 +15,11 @@ class SplashScreenController {
     const url = ApiConstants.dummyBaseURL; // Replace with your API endpoint
     try {
       final response = await http.get(Uri.parse(url));
-
+       print("=============");
       if (response.statusCode == NumberConstant.intTwoHundred) {
         var staticDefaultGroupResponse = await readJson();
+
+        print(staticDefaultGroupResponse);
         defaultGroupResponse = DefaultGroupResponse.fromJson(
             jsonDecode(staticDefaultGroupResponse.toString()));
         return defaultGroupResponse!;

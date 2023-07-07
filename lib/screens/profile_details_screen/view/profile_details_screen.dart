@@ -13,6 +13,9 @@ class _ProfileDetailsScreenState extends State<ProfileDetailsScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
         appBar:Appbar(title:StringConstant.textProfile),
+        body:  Center(
+        child: Text(StringConstant.textProfile),
+      ),
     );
   }
 }

@@ -48,8 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: (selectedeIndex == NumberConstant.intZero)
-          ? AppBar(
+      appBar: AppBar(
               elevation: NumberConstant.doubleZero,
               automaticallyImplyLeading: StringConstant.boolFalse,
               backgroundColor: whiteColor,
@@ -70,8 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
-            )
-          : null,
+            ),
       body: (selectedeIndex == NumberConstant.intZero)
           ? const DashboardScreen()
           : (selectedeIndex == NumberConstant.intOne)

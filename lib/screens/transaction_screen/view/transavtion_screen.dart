@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../utils/constants/string_constants.dart';
+
 class TransactionScreen extends StatefulWidget {
   const TransactionScreen({super.key});
 
@@ -9,8 +11,8 @@ class TransactionScreen extends StatefulWidget {
 class _TransactionScreenState extends State<TransactionScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Container(
-
+    return  const Center(
+      child: Text(StringConstant.textTransactions),
     );
   }
 }
